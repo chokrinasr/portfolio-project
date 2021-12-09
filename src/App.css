@@ -3,13 +3,17 @@
 :root{
   --primary-white:#fff;
   --primary-yellow:gold;
+  --primary-dark:#0000;
+  --primary-red:#ef4035;
+
 }
 
 body{
-  font-family: "Roboto Condensed" sans-serif !important;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 /************************* NAVBAR ******************************/
+nav{z-index: 2;}
 .logo{ margin-right: 5px;}
 /************************* NAV LINKS ***************************/
 nav a.nav-link{
@@ -21,11 +25,69 @@ nav ul li{
 .navbar-brand{color: var(--primary-white) !important}
 .navbar-nav{margin-left: auto;}
 .navbar-nav > li > a{
-  margin-left: 0,75rem;
-  margin-right: 0,75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   color: var(--primary-white) !important;
 }
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
-  border-top: 0,1875rem solid var(--primary-yellow);
-  
+.nav-item > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top: 0.2rem solid var(--primary-yellow); 
+}
+.navbar-nav > li > a:hover{
+border-top: 0.2rem solid var(--primary-yellow); 
+}
+/************************* HEADER ******************************/
+
+.header-wrapper{
+  position: relative;
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 90vh;
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+ 
+}
+.main-info h1{
+  color: var(--primary-white) !important;
+  text-transform: uppercase;
+}
+
+/************************* Text Typed ******************************/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white) ;
+}
+
+.btn-main-offer{
+  border:1px solid var(--primary-yellow);
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding:0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+
+}
+.btn-main-offer:hover{
+  color: var(--primary-white);
+  background-color: var(--primary-yellow);
+  transition: .2s ease-in-out;
+}
+
+/************************* Particles JS ******************************/
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index:1;
 }
