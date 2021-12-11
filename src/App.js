@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import Skills from "./components/Skills";
+import Timeline from "./components/timeline/Timeline";
 function App() {
   return (
   <>
@@ -32,6 +33,7 @@ function App() {
   <Header />
   <About />
   <Skills />
+  <Timeline />
   </>);
 }
 
