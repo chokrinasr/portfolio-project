@@ -4,14 +4,16 @@ import { skills } from "../data";
 import { TiltDirection } from "react-particles-js";
 function Skills() {
     return (
-        <div className="sk">
+        <div className="sk" id="skills">
             <div className="sk-texts">
                 <h1 className="sk-title">Mes Compétences</h1>
-                <p className="sk-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt fuga numquam ea, cum sint voluptate mollitia ipsum tenetur alias expedita officia consequuntur vel ex quae enim sequi odit itaque.</p>
+                <p className="sk-desc">Mes compétences me permettent la réalisation de projets de conception et développement des sites et applications web, notamment l’assemblage des demandes utilisateurs, la production de code la création de maquettes et l’amélioration des designs pour impressionner les clients.
+
+                </p>
             </div>
             <div className="sk-list">
-                {skills.map((item) =>(
-                    <Skillcard key={item.id} img={item.img} link={item.link}/>
+                {skills.map((item) => (
+                    <Skillcard key={item.id} img={item.img} link={item.link} />
                 ))}
 
 

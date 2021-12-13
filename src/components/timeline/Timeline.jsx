@@ -15,7 +15,7 @@ function Timeline() {
     let workIconStyles = { background: "#06D6A0" };
     let schoolIconStyles = { background: "#f9c74f" };
     return (
-        <div className='time-container'>
+        <div className='time-container' id="timeline">
       <h3 className="time-title">Expèriences</h3>
       <VerticalTimeline>
         {timelineElements.map((element) => {

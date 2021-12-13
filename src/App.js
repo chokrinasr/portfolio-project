@@ -7,6 +7,7 @@ import About from "./components/About";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import Skills from "./components/Skills";
 import Timeline from "./components/timeline/Timeline";
+import Contact from "./components/Contact";
 function App() {
   return (
   <>
@@ -31,9 +32,10 @@ function App() {
                 }/>
   <Navbar />
   <Header />
-  <About />
+  <About/>
   <Skills />
-  <Timeline />
+  <Timeline  />
+  <Contact />
   </>);
 }
 
