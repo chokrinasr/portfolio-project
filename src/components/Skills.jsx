@@ -12,7 +12,7 @@ function Skills() {
 
                 </p>
             </div>
-            <div className="sk-list row">
+            <div className="sk-list p-4">
                 {skills.map((item) => (
                     <Skillcard key={item.id} img={item.img} link={item.link} />
                 ))}

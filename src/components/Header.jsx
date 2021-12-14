@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed'
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     return (
@@ -9,7 +9,16 @@ const Header = () => {
             <div className="main-info">
                 <h1>Dévelloppeur web Full Stack</h1>
                 <Typed className="typed-text" strings={["JS","REACT","NODEJS","JAVA","PHP","PYTHON"]} typeSpeed={40} backSpeed={60} loop/>
-            <a href="#" className="btn-main-offer">Contact</a>
+                <Link className="btn-main-offer"
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >contact</Link>
+           
+            
             </div>
         </div>
     );

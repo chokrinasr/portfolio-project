@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
     return (
         <div className='container' id="about">
-            <div className="row mb-2"  >
-                <div className="col-md-6">
+            <div className="row mb-2 p-4"  >
+                <div className="col-md-6 p-4">
                     <div className="a-left">
                         <div className="a-card bg"></div>
                         <div className="a-card">
@@ -12,7 +12,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 p-4">
                     <div className="a-right">
 
                         <h1 className="a-title">Présentation</h1>
